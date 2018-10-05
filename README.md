@@ -3,7 +3,8 @@ Notes taken while reading articles and books like "JavaScript Allongé"
 
 ### Comma 
 This operator takes two arguments, evaluates them both, and itself evaluates to the value of the right-hand argument. In other words:
-```(1 + 1, 2 + 2)
+```
+(1 + 1, 2 + 2)
   //=> 4
 ```
 
@@ -13,8 +14,11 @@ So, this is a valid function:
 
 ### Undefined
 In JavaScript, the absence of a value is written undefined, and it means there is no value. It has its own type of value, and it acts like a value type:
-```undefined
-  //=> undefined```
+
+```
+undefined
+  //=> undefined
+```
 In JavaScript, every undefined is identical to every other undefined.
 When we deliberately want an undefined value use **void(expr)**.
 
@@ -25,8 +29,9 @@ A block is a (possibly empty) list of JavaScript statements separated by semicol
 
 An expression is a kind of JavaScript statement. Other kinds of statements are function declarations, for loops, if statements, and so forth.
 Statements belong inside blocks and only inside blocks. Some languages simplify this by making everything an expression, but JavaScript maintains this distinction.
-```(() => return 0)()
-  //=> ERROR
+```
+(() => return 0)()
+ //=> ERROR
 ```
 
 The **return** keyword creates a return statement that immediately terminates the function application and returns the result of evaluating its expression. For example:
