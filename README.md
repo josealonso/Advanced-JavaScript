@@ -55,3 +55,8 @@ If an expression that evaluates to a function is an expression, and if a return 
 Expressions consist either of representations of values (like 3.14159265, true, and undefined), operators that combine 
 expressions (like 3 + 2), some special forms like [1, 2, 3] for creating arrays out of expressions, 
 or function (arguments) {body-statements} for creating functions.
+
+### Variables and bindings
+
+Every time a function is invoked (“invoked” means “applied to zero or more arguments”), a new environment is created. An environment is a (possibly empty) dictionary that maps variables to values by name.
+
